@@ -1,5 +1,6 @@
 <div class="form-registro">
     <form action="/added" class="form-control">
+        {{form.csrf_token}}
         {{form.nombre.label(class='form-label')}}
         {{form.nombre(class='form-control')}}
         {{form.apellido_paterno.label(class='form-label')}}
