@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+.container-header{
+    display: grid;
+    height: auto;
+    grid-template-columns: auto 900px auto;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "logo1 texto logo2";
+}
+div:nth-child(1) .logo1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    grid-area: logo1;
+}
+div:nth-child(1) .texto{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 90px;
+    background-color: #ffffff;
+    grid-area: texto;
+}
+div:nth-child(1) .logo2{
+    background-color:#ffffff;
+    grid-area: logo2;
+}
+.container-header .logo_1,
+.container-header .logo_2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 0px;
+}

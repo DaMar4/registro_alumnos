@@ -1,0 +1,55 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+main{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "header header header"
+        "article article article"
+        "footer footer footer";
+}
+header{
+    grid-area: header;
+}
+article{
+    grid-area: article;
+}
+footer{
+    background-color: #161616;
+    color: darkgray;
+    grid-area: footer;
+    height: 100px;
+    margin-top: 20px;
+}
+.frm_inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3cm;
+}
+.frm_inicio form input{
+    background-color: red;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+}
+.frm_inicio form input:hover{
+
+}
+.form-registro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 50px 0px 50px;
+}
+form{
+    width: 100px;
+}
+form label,form input{
+    display: block;
+    padding: 10px 10px 0px 10px;
+} 
